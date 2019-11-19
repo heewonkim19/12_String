@@ -5,17 +5,12 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i=0;
-	char str[4];
-	str[0] = 'a';
-	str[1] = 'b';
-	str[2] = 'c';
-	str[3] = 0;
+	char src[]="The worst things to eat before you sleep";
+	char dst[100];
 	
-	while (str[i] != '\0')
-	{
-		printf("%c\n", str[i]);
-		i++;
-	}
-	return 0;
+	strcpy(dst,src);
+	
+	printf("copied string : %s", dst);
+	
+
 }
