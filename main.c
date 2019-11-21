@@ -10,12 +10,14 @@ int main(int argc, char *argv[]) {
 	FILE *fp;
 
 
-	fp = fopen("sample.txt", "w");
+	fp = fopen("sample.txt", "r");
 	for(i=0; i<3; i++)
 	{
-		printf("input a word: ");
-		scanf("%s", input);
-		fprintf(fp, "%s\n", input);		
+		//printf("input a word: ");
+		//scanf("%s", input); 
+		//fprintf(fp, "%s\n", input);
+		fscanf(fp, "%s", input);
+		printf("%s\n", input);		
 	}
 
 	fclose(fp);	
